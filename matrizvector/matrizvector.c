@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-/*mpicc -g -Wall -o vectores vectores.c    mpirun -np 2 ./vectores   Dos procesos si divides 10 en 5*/
+/*mpicc -g -Wall -o matrizvector matrizvector.c    mpirun -np 2 ./matrizvector Dos procesos si divides 10 en 5*/
 void Parallel_vector_sum(double local_x[], double local_y[], double local_z[], int local_n){
   int local_i;
   for(local_i=0;local_i < local_n; local_i++){
